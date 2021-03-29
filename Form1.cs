@@ -21,25 +21,26 @@ namespace Actividad_Integradora_2_Problema_6
         private void btnPagar_Click(object sender, EventArgs e)
         {
             double total = 0;
-            switch (txtSector.Text)
+            string dato = txtSector.Text.ToUpper();
+            switch (dato)
             {
-                case "Sol Candente":
+                case "SOL CANDENTE":
                     total = Convert.ToInt32(txtEntradas.Text) * 300;
                     lblTotal.Text = string.Format("Total: ${0} ",total );
                     break;
-                case "Sol Luminoso":
+                case "SOL LUMINOSO":
                     total = Convert.ToInt32(txtEntradas.Text) * 530;
                     lblTotal.Text = string.Format("Total: ${0} ", total);
                     break;
-                case "Sombrita":
+                case "SOMBRITA":
                     total = Convert.ToInt32(txtEntradas.Text) * 610;
                     lblTotal.Text = string.Format("Total: ${0} ", total);
                     break;
-                case "Tribuna":
+                case "TRIBUNA":
                     total = Convert.ToInt32(txtEntradas.Text) * 820;
                     lblTotal.Text = string.Format("Total: ${0} ", total);
                     break;
-                case "Silla Plastica":
+                case "SILLA PLASTICA":
                     total = Convert.ToInt32(txtEntradas.Text) * 930;
                     lblTotal.Text = string.Format("Total: ${0} ", total);
                     break;
